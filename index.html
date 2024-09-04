@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="converter.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Temperature Converter</h1>
-    <input type="text" placeholder="Enter Temperature">
-    <button type="button">Convert to Fahrenheit</button>
-    <button type="button">convert to Celsius</button>
-    <button type="button">convert to Kelvin</button>
-    <div class="result">
-
+        <h1>Temperature Converter</h1>
+        <input type="text" id="input" placeholder="Enter Temperature">
+        <button type="button" onclick="convertToFah()">Convert to Fahrenheit</button>
+        <button type="button" onclick="convertToCel()">convert to Celsius</button>
+        <button type="button" onclick="convertToKel()">convert to Kelvin</button>
+        <div id="result">
+        </div>
     </div>
-</div>
+    <script src="script.js"></script>
 </body>
+
 </html>
